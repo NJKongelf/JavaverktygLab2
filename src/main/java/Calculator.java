@@ -11,7 +11,14 @@ public class Calculator {
     public double calcDivsion(int num1,int num2){
         return num1 / num2;
     }
+    public int calcSubstract(int num1,int num2){
+        return num1-num2;
+    }
     private int arraySize(int[] numbers) {
         return numbers.length;
+    }
+
+    public int calcMltiplication(int num1, int num2) {
+        return num1*num2;
     }
 }
