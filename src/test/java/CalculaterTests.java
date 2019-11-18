@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+
 @DisplayName("The dieing breaths of a Javastudent \uD83D\uDC80")
 public class CalculaterTests {
     private  Calculator c;
@@ -30,6 +31,7 @@ public class CalculaterTests {
     @Order(2)
     @DisplayName("➗ I can say Chimichanga in seven languages")
     void calcDivide_shouldReturnSmallerDouble(){
+
         assertThrows(ArithmeticException.class, () -> {
             c.calcDivsion(1,0); });
         assertDoesNotThrow(()->c.calcDivsion(2,1));
@@ -47,6 +49,13 @@ public class CalculaterTests {
     void calcSubstract_ShouldReturnALowerResult(){
         assertDoesNotThrow(() ->  c.calcSubstract(0,0));
         assertEquals(666,c.calcSubstract(999,333));
+    }
+    @RepeatedTest(3)
+    @Order(6)
+    @DisplayName("If you feel lonly, see a horror movie \uD83D\uDE08")
+    void calcServalMethods(){
+        assertEquals(1,c.calcSubstract(c.calcMltiplication((int)c.calcAddition(2,3),2),9));
+
     }
     @BeforeEach
      void washYourHandsBeforeDinner(){
