@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 
 @DisplayName("The dieing breaths of a Javastudent \uD83D\uDC80")
-public class CalculaterTests {
+public class CalculaterTest {
     private  Calculator c;
 
     @ParameterizedTest
