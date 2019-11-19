@@ -3,19 +3,12 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.OS;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.api.extension.ExtensionContext;
-import org.junit.jupiter.api.extension.Extensions;
-import org.junit.jupiter.api.extension.TestWatcher;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.platform.commons.annotation.Testable;
-
-import java.lang.reflect.AnnotatedElement;
-import java.util.logging.Logger;
 
 
 @DisplayName("The dieing breaths of a Javastudent \uD83D\uDC80")
-public class CalculaterTest extends TestOkOrNot {
+public class CalculaterTest extends TestOkOrNot{
     private  Calculator c;
 
     @ParameterizedTest
