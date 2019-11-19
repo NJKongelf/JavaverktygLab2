@@ -55,7 +55,6 @@ public class CalculaterTests {
     @DisplayName("If you feel lonly, see a horror movie \uD83D\uDE08")
     void calcServalMethods(){
         assertDoesNotThrow(() -> assertEquals(1,c.calcSubstract(c.calcMltiplication((int)c.calcAddition(2,3),2),9)));
-
     }
     @BeforeEach
      void washYourHandsBeforeDinner(){
