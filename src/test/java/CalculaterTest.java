@@ -77,8 +77,8 @@ public class CalculaterTest extends TestOkOrNot {
     @Test
     @EnabledOnOs(OS.LINUX)
     @DisplayName("‘I need your clothes, your boots, and your motorcycle’\n - Terminator 2")
-    void skippedThisTestOrNor(){
-        System.out.println("Skipped");
+    void skippedThisTestOrNor(TestInfo info){
+        System.out.println("\""+info.getDisplayName()+"\" only run on Linux OS!");
     }
 
 
