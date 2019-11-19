@@ -68,6 +68,7 @@ public class CalculaterTest extends TestOkOrNot{
 
     @Order(6)
     @Test
+    @ExtendWith(TestOkOrNot.class)
     @EnabledOnOs(OS.LINUX)
     @DisplayName("‘I need your clothes, your boots, and your motorcycle’\n - Terminator 2")
     void skippedThisTestOrNor(TestInfo info){

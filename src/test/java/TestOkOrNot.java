@@ -2,6 +2,8 @@
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
 
+import java.util.Optional;
+
 
 public class TestOkOrNot implements TestWatcher {
     @Override
@@ -18,4 +20,8 @@ public class TestOkOrNot implements TestWatcher {
         System.out.println("\""+context.getParent().get().getDisplayName()+"\" Failed since you write bad code!!");
     }
 
+    @Override
+    public void testDisabled(ExtensionContext context, Optional<String> reason) {
+        System.out.println("Lazy Pencilpusher!! At least try Linux OS!!");
+    }
 }
