@@ -1,7 +1,8 @@
 image: maven:3-jdk-11
 
 test:
-    script: "mvn test"
+    script:
+      - mvn test -B
     artifacts:
         reports:
             junit: report.xml
